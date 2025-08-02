@@ -1,0 +1,130 @@
+body {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    font-size: 16px ;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+#main-visual img {
+   width: 100%;
+   max-width: 1920px;
+   height: 600px;
+}
+hr {
+    height: 5px;
+    background-color:#00FF00; 
+    width: 60%;
+    border: none;
+}
+
+/* アバウト */
+#about {
+   text-align: center;
+}
+.section-title {
+    text-align: center;
+}
+
+/* フロー */
+#flow h3 {
+    text-align: center;
+}
+.timeline {
+    margin-left: 200px;
+    border-left: 2px solid #eaf200;
+}
+.timeline li {
+    position: relative;
+    margin-block: 2rem;
+}
+.timeline-number {
+    font-weight: bold;
+    color: #555;
+}
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -3.1rem;
+    top: 0.25rem;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #2816ff;
+    border-radius: 50%;
+}
+
+/* マナー */
+#manners {
+    text-align: center;
+}
+#product {
+    display: flex;
+    justify-content: space-around;
+}
+.product-flex {
+   width: 300px;
+   text-align: center;
+   padding: 40px 10px;
+   background-color:#eeeeee ;
+}
+.product-photo {
+    width: 150px;
+    height: 150px;
+}
+/* サウナハット */
+#sauna-cap {
+    display: flex;
+    justify-content: center;
+
+}
+#goods {
+    text-align: center;
+}
+.hart {
+  width: 200px;
+  height: 200px;
+}
+#left {
+    margin: 80px
+}
+#right {
+    margin: 80px;
+}
+span {
+    color: red;
+}
+#message {
+    text-align: center;
+}
+#footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 750px) {
+    img {
+        width: 100%;
+    }
+    #product {
+      flex-wrap: wrap;
+    }
+    #sauna-cap {
+        flex-direction: column;
+    }
+    .hart {
+        padding-bottom: 50px;
+    }
+}
