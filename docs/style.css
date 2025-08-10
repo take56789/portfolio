@@ -1,20 +1,11 @@
 body {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
     font-size: 16px ;
+    background-color: #efefef;
 }
+
 img {
-    max-width: 100%;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-header {
-    display: flex;
-    justify-content: space-around;
+    max-width: 100;
 }
 #main-visual img {
    width: 100%;
@@ -26,6 +17,21 @@ hr {
     background-color:#00FF00; 
     width: 60%;
     border: none;
+}
+ul {
+    height: 300;
+    overflow: hidden;
+    transition: .3s;
+    list-style: none;
+}
+/* ハンバーガーメニュー */
+nav {
+    position: fixed;
+    top: 24px;
+    width: 100%;
+}
+ul {
+    height: 0;
 }
 
 /* アバウト */
