@@ -21,4 +21,4 @@ for (let i =0; i < items.length; i++) {
     fill: 'forwards',
   };
   items[i].animate(keyframes,options);
-}
+}a
