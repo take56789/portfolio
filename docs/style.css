@@ -18,20 +18,21 @@ hr {
     width: 60%;
     border: none;
 }
-ul {
-    height: 300;
-    overflow: hidden;
-    transition: .3s;
+header {
+    display: flex;
+    justify-content: space-around;
+}
+header ul {
+    display: flex;
+    margin: 30px; 
     list-style: none;
 }
-/* ハンバーガーメニュー */
-nav {
-    position: fixed;
-    top: 24px;
-    width: 100%;
+header li {
+    padding-left: 20px;
 }
-ul {
-    height: 0;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* アバウト */
