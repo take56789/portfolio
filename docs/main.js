@@ -43,5 +43,4 @@ var random = Math.floor( Math.random() * omikuji.length );
 
 main.src = "images/" + image[random] + ".png";
 document.getElementById("message").innerHTML = omikuji[random];
-
 }
