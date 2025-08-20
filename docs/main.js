@@ -1,46 +1,36 @@
-// 下から浮き上がらせる
-const heading = document.querySelector('.header h1');
+document.addEventListener('DOMContentLoaded', () => {
+  // 下から浮き上がらせる
+  const heading = document.querySelector('.header h1');
+  heading.animate(
+    { opacity:[0,1], transform:['translateY(30px)','translateY(0)'] },
+    { duration:2000, fill:'forwards' }
+  );
 
-const keyframes = {
-  opacity: [0,1],
-  translate: ['0 30px', 0],
-};
+  // ふわっと表示
+  const items = document.querySelectorAll('.product-photo');
+  items.forEach((item, i) => {
+    item.animate({opacity:[0,1]}, {duration:600, delay:i*300, fill:'forwards'});
+  });
 
-heading.animate(keyframes, 2000);
+  // おみくじイベント
+  const main = document.getElementById("main");
+  const message = document.getElementById("message");
+  const omikujiBtn = document.getElementById("omikujiBtn");
 
-// ふわっと表示
-const items = document.querySelectorAll ('.product-photo');
+  function next() {
+    const omikuji = ['大吉','吉','中吉','小吉','末吉','凶','大凶'];
+    const image = ['omikuji_daikichi','omikuji_kichi','omikuji_chuukichi','omikuji_syoukichi','omikuji_suekichi','omikuji_kyou','omikuji_daikyou'];
+    const random = Math.floor(Math.random() * omikuji.length);
 
-for (let i =0; i < items.length; i++) {
-  const keyframes = {
-    opacity: [0,1]
-  };
-  const options = {
-    duration: 600,
-    delay: i * 300,
-    fill: 'forwards',
-  };
-  items[i].animate(keyframes,options);
-}
+    main.src = "images/" + image[random] + ".png";
+    message.textContent = omikuji[random];
+  }
 
+  function start() {
+    main.src = "images/load.png";
+    message.textContent = "なにがでるかな";
+    setTimeout(next, 2000);
+  }
 
-
-// おみくじ
-const main = document.getElementById("main");
-
-
-function start() {
-main.src = "images/load.png";
-document.getElementById("message").innerHTML = "なにがでるかな";
-setTimeout(next, 2000);
-}
-
-function next() {
-
-var omikuji = ['大吉', '吉', '中吉', '小吉', '末吉', '凶','大凶'];
-var image = ['omikuji_daikichi', 'omikuji_kichi', 'omikuji_chuukichi', 'omikuji_syoukichi', 'omikuji_suekichi', 'omikuji_kyou','omikuji_daikyou'];
-var random = Math.floor( Math.random() * omikuji.length );
-
-main.src = "images/" + image[random] + ".png";
-document.getElementById("message").innerHTML = omikuji[random];
-}
+  omikujiBtn.addEventListener('click', start);
+});

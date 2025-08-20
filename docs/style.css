@@ -137,10 +137,18 @@ span {
     #product {
       flex-wrap: wrap;
     }
+    #product .product-flex {
+        width: 90%;
+        margin-bottom: 20px;
+    }
     #sauna-cap {
         flex-direction: column;
     }
-    .hart {
+
+    #sauna-cap #left, #sauna-cap #right {
+        margin: 20px 0;
+    }
+    .hat {
         padding-bottom: 50px;
     }
 }
