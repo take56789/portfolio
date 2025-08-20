@@ -5,7 +5,7 @@ body {
 }
 
 img {
-    max-width: 100;
+    max-width: 100%;
 }
 #main-visual img {
    width: 100%;
@@ -88,6 +88,7 @@ a {
 .product-photo {
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 /* サウナハット */
 #sauna-cap {
@@ -98,7 +99,7 @@ a {
 #goods {
     text-align: center;
 }
-.hart {
+.hat {
   width: 200px;
   height: 200px;
 }
@@ -111,13 +112,21 @@ a {
 span {
     color: red;
 }
-#message {
+#final-message {
     text-align: center;
 }
 #footer {
     text-align: center;
     background-color: black;
     color: white;
+}
+#casino {
+    text-align: center;
+}
+    
+#casino img {
+    width: 200px; 
+    height: 200px;
 }
 
 /* レスポンシブデザイン */
