@@ -137,7 +137,10 @@ span {
     width: 200px; 
     height: 200px;
 }
-
+p {
+    line-height: 1.8;
+    margin: 0 0 1em 0;
+}
 /* レスポンシブデザイン */
 @media screen and (max-width: 750px) {
     img {
@@ -167,7 +170,9 @@ span {
     #sauna-cap {
         flex-direction: column;
     }
-
+    #final-message p {
+        padding: 0 10px;
+    }
     #sauna-cap #left, #sauna-cap #right {
         margin: 20px 0;
     }
