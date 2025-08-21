@@ -170,9 +170,6 @@ p {
     #sauna-cap {
         flex-direction: column;
     }
-    #final-message p {
-        padding: 0 10px;
-    }
     #sauna-cap #left, #sauna-cap #right {
         margin: 20px 0;
     }
