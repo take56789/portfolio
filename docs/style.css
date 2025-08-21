@@ -74,21 +74,29 @@ a {
 /* マナー */
 #manners {
     text-align: center;
+    padding: 40px 20px;
 }
 #product {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 .product-flex {
-   width: 300px;
+   flex: 1 1 280px;           
+   max-width: 300px;           
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-radius: 10px;
    text-align: center;
-   padding: 40px 10px;
-   background-color:#eeeeee ;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
 }
 .product-photo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    display: block;
 }
 /* サウナハット */
 #sauna-cap {
@@ -113,17 +121,19 @@ span {
 }
 #final-message {
     text-align: center;
+    margin-bottom: 60px;
 }
 #footer {
     text-align: center;
     background-color: black;
     color: white;
 }
-#casino {
+/* おみくじ */
+#omikuji {
     text-align: center;
 }
     
-#casino img {
+#omikuji img {
     width: 200px; 
     height: 200px;
 }
@@ -132,6 +142,12 @@ span {
 @media screen and (max-width: 750px) {
     img {
         width: 100%;
+    }
+    .timeline {
+        margin-left: 40px;
+    }
+    .timeline-content::before {
+        left: -2rem;
     }
     #product {
       flex-wrap: wrap;
@@ -154,5 +170,4 @@ span {
     .hat {
         padding-bottom: 50px;
     }
-    
 }
