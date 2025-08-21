@@ -102,7 +102,7 @@ a {
     margin-bottom: 12px;
     display: block;
 }
-/* サウナハット */
+/* グッズ */
 #sauna-cap {
     display: flex;
     justify-content: center;
@@ -132,7 +132,7 @@ span {
     background-color: black;
     color: white;
 }
-/* おみくじ */
+/* 運試し */
 #omikuji {
     text-align: center;
 }
