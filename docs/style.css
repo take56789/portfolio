@@ -143,6 +143,10 @@ span {
     img {
         width: 100%;
     }
+    p {
+        font-size: 16px;
+        max-width: 90%;
+    }
     .timeline {
         margin-left: 40px;
     }
