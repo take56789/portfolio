@@ -6,11 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { duration:2000, fill:'forwards' }
   );
 
-  // ふわっと表示
-  const items = document.querySelectorAll('.product-photo');
-  items.forEach((item, i) => {
-    item.animate({opacity:[0,1]}, {duration:600, delay:i*300, fill:'forwards'});
-  });
 
   // おみくじイベント
   const main = document.getElementById("main");

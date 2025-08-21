@@ -3,7 +3,6 @@ body {
     font-size: 16px ;
     background-color: #efefef;
 }
-
 img {
     max-width: 100%;
 }
@@ -54,6 +53,7 @@ a {
 .timeline li {
     position: relative;
     margin-block: 2rem;
+    list-style: none;
 }
 .timeline-number {
     font-weight: bold;
@@ -94,7 +94,6 @@ a {
 #sauna-cap {
     display: flex;
     justify-content: center;
-
 }
 #goods {
     text-align: center;
@@ -137,6 +136,10 @@ span {
     #product {
       flex-wrap: wrap;
     }
+    header ul{
+        flex-direction: column;
+        text-align: center;
+    }
     #product .product-flex {
         width: 90%;
         margin-bottom: 20px;
@@ -151,4 +154,5 @@ span {
     .hat {
         padding-bottom: 50px;
     }
+    
 }
