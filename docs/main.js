@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { duration:2000, fill:'forwards' }
   );
 
-
   // おみくじイベント
   const main = document.getElementById("main");
   const message = document.getElementById("message");
