@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '少し熱さに注意。無理せず休憩しながら楽しんで',
       '今日は控えめに入るのが吉。冷たい水風呂でリフレッシュ',
       '無理は禁物。深呼吸を意識して落ち着いてサウナを楽しもう',
-      '今日はリラックス重視。サウナ室より休憩メインで過ごすと吉'
+      '今日はリラックス重視。サウナ室より休憩メインで過ごすと吉.'
     ];
     const random = Math.floor(Math.random() * omikuji.length);
 
